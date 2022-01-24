@@ -118,4 +118,7 @@ public <T extends ComponentEvent<?>> Registration addListener(Class<T> eventType
     ComponentEventListener<T> listener) { 
   return getEventBus().addListener(eventType, listener);
 }
+
+public void addListener(Class<DeleteEvent> class1, Object listener) {
+}
 }
