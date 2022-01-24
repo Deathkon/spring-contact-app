@@ -17,7 +17,6 @@ public class MainLayout extends AppLayout {
         createHeader();
         createDrawer();
     }
-    
     private void createHeader() {
         H1 logo = new H1("FLOW APP");
         logo.addClassNames("text-l", "m-m");
