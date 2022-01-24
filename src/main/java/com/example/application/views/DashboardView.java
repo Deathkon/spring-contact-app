@@ -2,6 +2,8 @@ package com.example.application.views;
 
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
+import javax.annotation.security.PermitAll;
+
 import com.example.application.data.service.CrmService;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.charts.Chart;
@@ -13,6 +15,7 @@ import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
+@PermitAll
 @Route(value = "dashboard", layout = MainLayout.class)
 @PageTitle("Dashboard")
 public class DashboardView extends VerticalLayout {

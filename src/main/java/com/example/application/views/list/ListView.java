@@ -1,5 +1,7 @@
 package com.example.application.views.list;
 
+import javax.annotation.security.PermitAll;
+
 // import java.util.Collections;
 
 import com.example.application.data.entity.Contact;
@@ -15,9 +17,9 @@ import com.vaadin.flow.data.value.ValueChangeMode;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
-// import com.vaadin.flow.theme.Theme;
 
-@PWA(name = "Flow App", shortName = "Flow App", enableInstallPrompt = false)
+@PermitAll
+@PWA(name = "Flow App", shortName = "Flow", enableInstallPrompt = false)
 @PageTitle("Flow App")
 @Route(value = "", layout = MainLayout.class)
 public class ListView extends VerticalLayout {
