@@ -18,7 +18,7 @@ import com.vaadin.flow.theme.Theme;
 
 @PWA(name = "Flow App", shortName = "Flow App", enableInstallPrompt = false)
 @Theme(themeFolder = "flowcrmtutorial")
-@PageTitle("Flow App")
+@PageTitle("Contact || Flow App")
 @Route(value = "")
 public class ListView extends VerticalLayout {
         Grid<Contact> grid = new Grid<>(Contact.class); 
@@ -38,7 +38,13 @@ public class ListView extends VerticalLayout {
             
             ); 
             updateList();
+            closeEditor();
     }
+        private void closeEditor() {
+            form.setContact(null);
+            form.setVisible(false);
+            removeClassName("editing");
+        }
         private void updateList() {
             grid.setItems(service.findAllContacts(filterText.getValue())); 
         }
@@ -61,6 +67,17 @@ public class ListView extends VerticalLayout {
             grid.addColumn(contact -> contact.getStatus().getName()).setHeader("Status"); 
             grid.addColumn(contact -> contact.getCompany().getName()).setHeader("Company");
             grid.getColumns().forEach(col -> col.setAutoWidth(true)); 
+
+            grid.asSingleSelect().addValueChangeListener(e -> editContact(e.getValue()));
+        }
+        private void editContact(Contact contact) {
+            if(contact == null){
+                closeEditor();
+            }else{
+                form.setContact(contact);
+                form.setVisible(true);
+                addClassName("editing");
+            }
         }
         private HorizontalLayout getToolbar() {
             filterText.setPlaceholder("Filter by name...");
