@@ -18,7 +18,7 @@ import com.vaadin.flow.theme.Theme;
 
 @PWA(name = "Flow App", shortName = "Flow App", enableInstallPrompt = false)
 @Theme(themeFolder = "flowcrmtutorial")
-@PageTitle("Contact || Flow App")
+@PageTitle("Flow App")
 @Route(value = "")
 public class ListView extends VerticalLayout {
         Grid<Contact> grid = new Grid<>(Contact.class); 
@@ -86,9 +86,14 @@ public class ListView extends VerticalLayout {
             filterText.addValueChangeListener(e -> updateList());
     
             Button addContactButton = new Button("Add contact");
-    
+            addContactButton.addClickListener(e -> addContact());
+            
             HorizontalLayout toolbar = new HorizontalLayout(filterText, addContactButton); 
             toolbar.addClassName("toolbar");
             return toolbar;
+        }
+        private void addContact() {
+            grid.asSingleSelect().clear();
+            editContact(new Contact());
         }
 }
