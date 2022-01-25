@@ -20,7 +20,7 @@ http://localhost:8080 in your browser.
 
 # Login Info
 
-Username: user .
+Username: user
 Password: userpass
 
 Demo Link https://philbertflow.herokuapp.com/
