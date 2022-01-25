@@ -26,7 +26,10 @@ http://localhost:8080 in your browser.
 ![image](https://user-images.githubusercontent.com/74615179/151060164-796ec584-171a-4219-901e-e8d76709f05c.png)
 # Beside that you can add, edit and delete contact
 ![image](https://user-images.githubusercontent.com/74615179/151060177-ad69ba47-2afa-4482-b539-424a2cd7fa09.png)
+# Adding a new contact
 ![image](https://user-images.githubusercontent.com/74615179/151060268-7f650c68-13ba-4332-a89f-47775b52110e.png)
+# When Contacts are many you can search through them
 ![image](https://user-images.githubusercontent.com/74615179/151060190-de062eff-3c18-49df-9415-d439bb02188c.png)
+# You can even delete a contact
 ![image](https://user-images.githubusercontent.com/74615179/151060212-06e8f2df-ece1-4305-954e-fa08819b6556.png)
 
