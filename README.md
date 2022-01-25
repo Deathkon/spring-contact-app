@@ -17,6 +17,14 @@ http://localhost:8080 in your browser.
 - `views` package in `src/main/java` contains the server-side Java views of your application.
 - `views` folder in `frontend/` contains the client-side JavaScript views of your application.
 - `themes` folder in `frontend/` contains the custom CSS styles.
+
+# Login Info
+
+Username: user
+Password: userpass
+
+# Demo Link https://philbertflow.herokuapp.com/
+
 # Project image samples
 # Firstly you have to login
 ![image](https://user-images.githubusercontent.com/74615179/151060127-0240b9de-a3e1-418a-9466-34e474eaf3d9.png)
