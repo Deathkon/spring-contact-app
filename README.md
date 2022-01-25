@@ -17,14 +17,14 @@ http://localhost:8080 in your browser.
 - `views` package in `src/main/java` contains the server-side Java views of your application.
 - `views` folder in `frontend/` contains the client-side JavaScript views of your application.
 - `themes` folder in `frontend/` contains the custom CSS styles.
-# project ScreenShoot
-`Firstly you have to login`
+# Project image samples
+# Firstly you have to login
 ![image](https://user-images.githubusercontent.com/74615179/151060127-0240b9de-a3e1-418a-9466-34e474eaf3d9.png)
-`The Dashboard contaning Management Info`
+# The Dashboard contaning Management Info
 ![image](https://user-images.githubusercontent.com/74615179/151060143-3882d65a-5c85-408e-bae7-7f03b06cdbd6.png)
 # You can visualize the data in the pie chart form where it categorize info regarding to the companies they work in.
-# Beside that you can add, edit and delete contact
 ![image](https://user-images.githubusercontent.com/74615179/151060164-796ec584-171a-4219-901e-e8d76709f05c.png)
+# Beside that you can add, edit and delete contact
 ![image](https://user-images.githubusercontent.com/74615179/151060177-ad69ba47-2afa-4482-b539-424a2cd7fa09.png)
 ![image](https://user-images.githubusercontent.com/74615179/151060268-7f650c68-13ba-4332-a89f-47775b52110e.png)
 ![image](https://user-images.githubusercontent.com/74615179/151060190-de062eff-3c18-49df-9415-d439bb02188c.png)
